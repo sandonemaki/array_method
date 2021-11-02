@@ -25,14 +25,13 @@ attr_reader :new_sum
       # countが2（配列の最後）の時に出力
       
       s += i
-      if index == last
-        puts s
-        pp "i=#{i} index=#{index} s=#{s}"
-      end
+      #   if index == last
+      #     puts s
+      #     pp "i=#{i} index=#{index} s=#{s}"
+      #   end
     }
+    puts s
   end
-  
-  
 end
 # a = ArraySampleSum.new([1, 2, 3])
 # a.sum
