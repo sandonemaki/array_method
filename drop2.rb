@@ -24,12 +24,10 @@ class ArraySample
       # puts i
       # puts n
       # puts "i:#{i} n:#{n}"
-      if i > n
+      if index >= n 
         puts(i.to_i)
       end
-      if index == new_ary.size - 1
-        puts "".to_i
-      end
+      #puts "i:#{i} index:#{index}"
     }
     
   end
@@ -37,5 +35,4 @@ end
 #binding.break
 a = ArraySample.new([1, 2, 3, 4, 5, 0])
 #puts a.total
-a.drop(3)
-
+a.drop(5)
