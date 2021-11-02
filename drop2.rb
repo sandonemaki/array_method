@@ -20,18 +20,28 @@ class ArraySample
     # end
     
     new_ary = @total
-    new_ary.each_with_index {|i, index|
-      # puts i
-      # puts n
-      # puts "i:#{i} n:#{n}"
-      if index >= n 
-        puts(i.to_i)
+    # インデックスを使う方法
+    # new_ary.each_with_index {|i, index|
+      # if index >= n 
+      #   puts(i.to_i)
+      # end
+      # puts "i:#{i} index:#{index}"
+
+      # countの数よりもnが大きい時
+    new_ary.each_with_index {|i, count|
+      if count >= n
+        puts(i)
+      flag = true
+        # else count < n
+        # puts([].to_s)
       end
-      #puts "i:#{i} index:#{index}"
     }
-    
+    if !flag
+      puts([].to_s)
+    end
   end
 end
+
 #binding.break
 a = ArraySample.new([1, 2, 3, 4, 5, 0])
 #puts a.total
