@@ -15,6 +15,7 @@ class ArraySampleCompact
     
     @new_ary.delete_if do |n|
       n.nil?
+      #n.nil? || n == false
     end
     
     #@new_ary.map {|baz| baz.nil? ? baz.to_s: ''}
@@ -24,6 +25,7 @@ class ArraySampleCompact
     #   baz.delete(0)
     # end
     puts @new_ary
+    pp "@new_ary: #{@new_ary}"
   end
 end
 
